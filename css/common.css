@@ -61,18 +61,16 @@ a {
     transition: 0.3s;
 }
 
-@media (hover: hover) {
-    .pc_nav a:hover {
-        color: var(--accent-color);
-    }
+.pc_nav a:hover {
+    color: var(--accent-color);
+}
 
-    .header_wrap a:hover {
-        color: var(--accent-color);
-    }
+.header_wrap a:hover {
+    color: var(--accent-color);
+}
 
-    .footer a:hover {
-        color: #26130e;
-    }
+.footer a:hover {
+    color: #26130e;
 }
 
 ul {
@@ -312,22 +310,20 @@ canvas {
     transition: 0.3s;
 }
 
-@media (hover: hover) {
-    .mailicon_hover-pc_only:hover .mailicon_circle_change_pc {
-        opacity: 1;
-    }
+.mailicon_hover-pc_only:hover .mailicon_circle_change_pc {
+    opacity: 1;
+}
 
-    .mailicon_hover-pc_only:hover .mailicon_change_pc {
-        opacity: 1;
-    }
+.mailicon_hover-pc_only:hover .mailicon_change_pc {
+    opacity: 1;
+}
 
-    .mailicon_hover-pc_only:hover .mailicon_circle_pc {
-        opacity: 0;
-    }
+.mailicon_hover-pc_only:hover .mailicon_circle_pc {
+    opacity: 0;
+}
 
-    .mailicon_hover-pc_only:hover .mailicon_pc {
-        opacity: 0;
-    }
+.mailicon_hover-pc_only:hover .mailicon_pc {
+    opacity: 0;
 }
 
 /* footerのメールアイコン--- */
@@ -382,22 +378,20 @@ canvas {
     transition: 0.3s;
 }
 
-@media (hover: hover) {
-    .footer_mailicon-pc:hover .footer_mailicon_circle_change {
-        opacity: 1;
-    }
+.footer_mailicon-pc:hover .footer_mailicon_circle_change {
+    opacity: 1;
+}
 
-    .footer_mailicon-pc:hover .footer_mailicon_change {
-        opacity: 1;
-    }
+.footer_mailicon-pc:hover .footer_mailicon_change {
+    opacity: 1;
+}
 
-    .footer_mailicon-pc:hover .footer_mailicon_circle {
-        opacity: 0;
-    }
+.footer_mailicon-pc:hover .footer_mailicon_circle {
+    opacity: 0;
+}
 
-    .footer_mailicon-pc:hover .footer_mailicon {
-        opacity: 0;
-    }
+.footer_mailicon-pc:hover .footer_mailicon {
+    opacity: 0;
 }
 
 .footer_mailicon-pc.is-active {

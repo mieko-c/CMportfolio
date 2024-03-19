@@ -100,12 +100,10 @@
     transition: 1s all;
 }
 
-@media (hover: hover) {
-    .works_slider img:hover {
-        transform: scale(1.2, 1.2);
-        transition: 1s all;
-        border-radius: 9.7%;
-    }
+.works_slider img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 1s all;
+    border-radius: 9.7%;
 }
 
 /* works右矢印調整 */
@@ -155,11 +153,9 @@
     left: 68%;
 }
 
-@media (hover: hover) {
-    .slick-next:hover,
-    .slick-prev:hover {
-        background: black;
-    }
+.slick-next:hover,
+.slick-prev:hover {
+    background: black;
 }
 
 /* スライダーのviewボタン */
