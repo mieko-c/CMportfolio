@@ -42,6 +42,10 @@ html.wfno-load {
     visibility: visible;
 }
 
+body {
+    display: none;
+}
+
 /* リセットcssでbody内の背景色を指定 */
 body {
     background-color: #f3f5fa;
