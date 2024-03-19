@@ -61,8 +61,10 @@ a {
     transition: 0.3s;
 }
 
-.pc_nav a:hover {
-    color: var(--accent-color);
+@media (hover: hover) {
+    .pc_nav a:hover {
+        color: var(--accent-color);
+    }
 }
 
 .header_wrap a:hover {
