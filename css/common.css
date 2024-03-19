@@ -29,6 +29,10 @@ li {
     --accent-color: #8e53a7;
 }
 
+body {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
 }

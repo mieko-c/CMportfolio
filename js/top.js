@@ -1,7 +1,6 @@
-/* ページ読込みで切り替わる瞬間に一瞬全体が表示する現象を防ぐ方法 */
-document.addEventListener('DOMContentLoaded', function() {
-	document.body.style.display = 'block';
-});
+// １秒かけてフェードイン
+$(function(){
+  $('body').fadeIn(2000);});
 // ---
 
   // ローディング---
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function () {
           // ローディングを数秒後に非表示にする
           $(".loading").removeClass('is-active');
-        }, 3000); // ローディングを表示する時間
+        }, 4000); // ローディングを表示する時間
       }
     }
     webStorage();
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('Loading complete!');
     } else {
       countup++;
-      setTimeout(updateCountup, 20); // 0.1秒ごとにカウントアップを更新
+      setTimeout(updateCountup, 30); // 0.1秒ごとにカウントアップを更新
     }
   }
   
