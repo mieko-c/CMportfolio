@@ -1,15 +1,9 @@
-    // webフォントのちらつきをなくす
-setTimeout(function () {
-  document.getElementsByTagName("html")[0].classList.add("wfno-load");
-}, 3000);
-// ---
-
-// ページ読込みで切り替わる瞬間に一瞬全体が表示する現象を防ぐ方法
+/* ページ読込みで切り替わる瞬間に一瞬全体が表示する現象を防ぐ方法 */
 document.addEventListener('DOMContentLoaded', function() {
 	document.body.style.display = 'block';
 });
 // ---
-  
+
   // ローディング---
   jQuery(function () {
     var webStorage = function () {

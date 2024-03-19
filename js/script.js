@@ -4,12 +4,6 @@ setTimeout(function () {
 }, 3000);
 // ---
 
-// ページ読込みで切り替わる瞬間に一瞬全体が表示する現象を防ぐ方法
-document.addEventListener('DOMContentLoaded', function() {
-	document.body.style.display = 'block';
-});
-// ---
-
 // scotch display,scotch text,しっぽり明朝---
   (function(d) {
     var config = {
@@ -72,33 +66,33 @@ window.addEventListener('scroll', function() {
 // お問い合わせアイコンをアクセントカラーに変更---
 $(function(){
 
-  let path_icon;
-  let path_icon_change;
-  let path_circle;
-  let path_circle_change;
-  let accent_color;
-  
-  if(randomColor == "#a7536c"){
-    accent_color = 'pink';
-  } else if(randomColor == "#418266"){
-    accent_color = 'green';
-  } else if(randomColor == "#5373a7"){
-    accent_color = 'blue';
-  } else if(randomColor == "#8e53a7"){
-    accent_color = 'purple';
-  }
-  
-  path_icon = 'images/mailicon_pc_' + accent_color + '.svg';
-  path_icon_change = 'images/mailicon_change_pc_' + accent_color + '.svg';
-  path_circle = 'images/mailicon_circle_pc_' + accent_color + '.svg';
-  path_circle_change = 'images/mailicon_circle_change_pc_' + accent_color + '.svg';
-  $('.mailicon_pc').attr('src', path_icon);
-  $('.mailicon_change_pc').attr('src', path_icon_change);
-  $('.mailicon_circle_pc').attr('src', path_circle);
-  $('.mailicon_circle_change_pc').attr('src', path_circle_change);
-  
-  });
-  //---
+let path_icon;
+let path_icon_change;
+let path_circle;
+let path_circle_change;
+let accent_color;
+
+if(randomColor == "#a7536c"){
+  accent_color = 'pink';
+} else if(randomColor == "#418266"){
+  accent_color = 'green';
+} else if(randomColor == "#5373a7"){
+  accent_color = 'blue';
+} else if(randomColor == "#8e53a7"){
+  accent_color = 'purple';
+}
+
+path_icon = 'images/mailicon_pc_' + accent_color + '.svg';
+path_icon_change = 'images/mailicon_change_pc_' + accent_color + '.svg';
+path_circle = 'images/mailicon_circle_pc_' + accent_color + '.svg';
+path_circle_change = 'images/mailicon_circle_change_pc_' + accent_color + '.svg';
+$('.mailicon_pc').attr('src', path_icon);
+$('.mailicon_change_pc').attr('src', path_icon_change);
+$('.mailicon_circle_pc').attr('src', path_circle);
+$('.mailicon_circle_change_pc').attr('src', path_circle_change);
+
+});
+//---
 
 // footer波---
   var unit = 100,
