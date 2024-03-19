@@ -33,6 +33,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* webフォントのちらつきをなくす */
 html {
     visibility: hidden;
 }

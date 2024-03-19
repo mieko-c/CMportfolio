@@ -1,6 +1,8 @@
+// webフォントのちらつきをなくす
 setTimeout(function () {
   document.getElementsByTagName("html")[0].classList.add("wfno-load");
 }, 3000);
+// ---
 
 // scotch display,scotch text,しっぽり明朝---
   (function(d) {
