@@ -1,3 +1,9 @@
+    // webフォントのちらつきをなくす
+setTimeout(function () {
+  document.getElementsByTagName("html")[0].classList.add("wfno-load");
+}, 3000);
+// ---
+  
   // ローディング---
   jQuery(function () {
     var webStorage = function () {
