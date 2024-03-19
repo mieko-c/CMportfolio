@@ -33,6 +33,14 @@ html {
     scroll-behavior: smooth;
 }
 
+html {
+    visibility: hidden;
+}
+html.wf-active,
+html.wfno-load {
+    visibility: visible;
+}
+
 /* リセットcssでbody内の背景色を指定 */
 body {
     background-color: #f3f5fa;
