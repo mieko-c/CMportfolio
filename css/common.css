@@ -29,21 +29,52 @@ li {
     --accent-color: #8e53a7;
 }
 
-body {
-    display: none;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
-/* webフォントのちらつきをなくす */
-html {
+/* ページ遷移の文字のちらつきを防止 */
+body {
     visibility: hidden;
+    transition: visibility 0s ease 0.4s;
 }
-html.wf-active,
-html.wfno-load {
-    visibility: visible;
+/* CSSでのアニメーションの設定 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* ページ遷移時にアニメーションを適用する要素に対して設定 */
+body {
+    animation: fadeIn 0.5s ease;
+}
+/* --- */
+
+/* ページ遷移をふわっとさせる */
+body {
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+    animation: fadeIn 2s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 /* --- */
 

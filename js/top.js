@@ -1,8 +1,3 @@
-// １秒かけてフェードイン
-$(function(){
-  $('body').fadeIn(3000);});
-// ---
-
   // ローディング---
   jQuery(function () {
     var webStorage = function () {
@@ -16,7 +11,7 @@ $(function(){
         setTimeout(function () {
           // ローディングを数秒後に非表示にする
           $(".loading").removeClass('is-active');
-        }, 4000); // ローディングを表示する時間
+        }, 2500); // ローディングを表示する時間
       }
     }
     webStorage();
@@ -35,7 +30,7 @@ $(function(){
       console.log('Loading complete!');
     } else {
       countup++;
-      setTimeout(updateCountup, 30); // 0.1秒ごとにカウントアップを更新
+      setTimeout(updateCountup, 20); // 0.1秒ごとにカウントアップを更新
     }
   }
   
@@ -60,12 +55,3 @@ function handleScroll() {
   // スクロールイベントリスナーを追加
   window.addEventListener("scroll", handleScroll);
 //---
-
-
-
-
-
-
-
-
-

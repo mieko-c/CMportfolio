@@ -9,11 +9,11 @@
   })(document);
 //---
 
-// webフォントのちらつきをなくす
-setTimeout(function () {
-  document.getElementsByTagName("html")[0].classList.add("wfno-load");
-}, 3000);
-// ---    
+// ページ遷移の文字のちらつきを防止
+window.addEventListener('load', function() {
+  document.body.style.visibility = 'visible';
+});
+// ---   
 
 // accent-color変化---
 const root = document.querySelector(':root');
@@ -33,6 +33,46 @@ $('.sp_btn, .sp_nav Li').on('click', function () {
   $(".sp_nav").fadeToggle();
   $(".sp_btn").toggleClass("open");
 });
+//---
+
+//works viweボタン---
+$(function(){
+  $(document).on({
+    'mouseenter': function () {
+      $('body').addClass('no-cursor');
+      $('.viewbutton').addClass('is-active');
+      document.addEventListener('mousemove', function (e) {
+        $('.viewbutton').css('transform', 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)');
+      });
+    },
+  
+    'mouseleave': function () {
+      $('body').removeClass('no-cursor');
+      $('.viewbutton').removeClass('is-active');      
+    }
+  }, '.slick-slide');
+});
+//---
+
+//worksスライダー---
+$(function () {
+$('.works_slider').slick({
+      dots: false,//インジケーターを非表示
+      infinite: true,//無限再生
+      speed: 1500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      // レスポンシブ
+      responsive: [{
+      breakpoint: 768,
+      settings: {
+      slidesToShow: 1
+      }
+    }]
+  });
+})
 //---
 
 // メールアイコンがフッターにいる時とそれ以外で色が変わる---
@@ -205,44 +245,4 @@ $(function(){
   
   }, '.works_img_modal');
 });
-//---
-
-//works viweボタン---
-$(function(){
-  $(document).on({
-    'mouseenter': function () {
-      $('body').addClass('no-cursor');
-      $('.viewbutton').addClass('is-active');
-      document.addEventListener('mousemove', function (e) {
-        $('.viewbutton').css('transform', 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)');
-      });
-    },
-  
-    'mouseleave': function () {
-      $('body').removeClass('no-cursor');
-      $('.viewbutton').removeClass('is-active');      
-    }
-  }, '.slick-slide');
-});
-//---
-
-//worksスライダー---
-$(function () {
-$('.works_slider').slick({
-      dots: false,//インジケーターを非表示
-      infinite: true,//無限再生
-      speed: 1500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 1000,
-      // レスポンシブ
-      responsive: [{
-      breakpoint: 768,
-      settings: {
-      slidesToShow: 1
-      }
-    }]
-  });
-})
 //---
