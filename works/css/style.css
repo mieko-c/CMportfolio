@@ -30,7 +30,6 @@
 .works_img_modal {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 0 10% 0 10%;
 }
 
@@ -53,7 +52,7 @@
 }
 
 .works4_sp {
-    width: 79.2%;
+    width: 85%;
 }
 
 .works5 {
