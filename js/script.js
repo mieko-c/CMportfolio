@@ -38,8 +38,10 @@
       try {
           Typekit.load({
               active: function() {
-                  // フォントが正常に読み込まれた場合
-                  h.className = h.className.replace(/\bwf-loading\b/g, "wf-active");
+                  // フォントが正常に読み込まれた場合、0.5秒後にクラスを変更
+                  setTimeout(function() {
+                      h.className = h.className.replace(/\bwf-loading\b/g, "wf-active");
+                  }, 500);  // 0.5秒後にクラスを変更して表示
               },
               inactive: function() {
                   // フォントが読み込まれなかった場合

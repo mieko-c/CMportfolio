@@ -125,6 +125,7 @@ img {
 /* フォントが読み込まれた後に表示 */
 .wf-active body {
     visibility: visible;
+    transition: visibility 0s 2s; /* 2秒後に表示 */
 }
 
 /* フォントが読み込まれなかった場合でも表示 */
