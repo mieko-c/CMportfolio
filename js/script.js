@@ -18,8 +18,9 @@
   },
   h = d.documentElement,  // HTML要素を取得
   t = setTimeout(function() {
+      // 指定時間内にフォントが読み込まれなかった場合、wf-loadingをwf-inactiveに置き換える
       h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-  }, config.scriptTimeout),  // タイムアウト後にクラスを変更して非表示にする
+  }, config.scriptTimeout), 
   tk = d.createElement("script"),  // スクリプト要素を作成
   f = false,  // フラグ
   s = d.getElementsByTagName("script")[0],  // 最初のスクリプト要素を取得
@@ -33,11 +34,21 @@
       if (f || (a && a != "complete" && a != "loaded")) return;
       f = true;
       clearTimeout(t);  // タイムアウトをクリア
+
       try {
-          Typekit.load(config);  // Typekitをロード
-          h.className = h.className.replace(/\bwf-loading\b/g, "");  // フォントが読み込まれたらクラスを削除
+          Typekit.load({
+              active: function() {
+                  // フォントが正常に読み込まれた場合
+                  h.className = h.className.replace(/\bwf-loading\b/g, "");
+              },
+              inactive: function() {
+                  // フォントが読み込まれなかった場合
+                  h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+              }
+          });
       } catch (e) {
-          h.className += " wf-inactive";  // エラー時にフォールバッククラスを追加
+          // エラーが発生した場合、wf-inactiveクラスを追加
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
       }
   };
   s.parentNode.insertBefore(tk, s);  // スクリプトを挿入
