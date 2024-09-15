@@ -117,6 +117,21 @@ img {
 }
 /* リセットcssここまで */
 
+/* フォントが読み込まれるまで非表示にする */
+.wf-loading body {
+    visibility: hidden;
+}
+
+/* フォントが読み込まれた後に表示 */
+.wf-active body {
+    visibility: visible;
+}
+
+/* フォントが読み込まれなかった場合でも表示 */
+.wf-inactive body {
+    visibility: visible;
+}
+
 /* viewボタンのカーソルマークを消す */
 .no-cursor,
 .no-cursor a {

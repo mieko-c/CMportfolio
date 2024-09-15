@@ -39,7 +39,7 @@
           Typekit.load({
               active: function() {
                   // フォントが正常に読み込まれた場合
-                  h.className = h.className.replace(/\bwf-loading\b/g, "");
+                  h.className = h.className.replace(/\bwf-loading\b/g, "wf-active");
               },
               inactive: function() {
                   // フォントが読み込まれなかった場合
