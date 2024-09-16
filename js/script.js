@@ -9,7 +9,7 @@
   // })(document);
 //---
 
-// webフォントが読み込まれるまで非表示にする---
+// scotch display,しっぽり明朝必要ウェイトのみ抜粋、webフォントが読み込まれるまで非表示にしてカクツキを防止---
 (function(d) {
   var config = {
       kitId: 'iim6jay',  // TypekitのkitIdを設定
@@ -38,10 +38,10 @@
       try {
           Typekit.load({
               active: function() {
-                  // フォントが正常に読み込まれた場合、0.5秒後にクラスを変更
+                  // フォントが正常に読み込まれた場合、5秒後にクラスを変更
                   setTimeout(function() {
                       h.className = h.className.replace(/\bwf-loading\b/g, "wf-active");
-                  }, 500);  // 0.5秒後にクラスを変更して表示
+                  }, 5000);  // 5秒後にクラスを変更して表示
               },
               inactive: function() {
                   // フォントが読み込まれなかった場合
