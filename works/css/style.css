@@ -9,7 +9,8 @@
     font-family: "scotch-display", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 11vw;
+    /* font-size: 11vw; */
+    font-size: clamp(50px, 11vw, 106px);
     padding-top: 148px;
 }
 
@@ -60,19 +61,21 @@
 }
 
 .works_text dl {
-    font-size: 18px;
+    /* font-size: 18px; */
     padding: 218px 13% 259px 13%;
 }
 
 .works_text dt {
     float: left;
     line-height: 1.8;
+    font-size: clamp(20px, 2vw, 25px);
 }
 
 .works_text dd {
     padding-left: 37%;
     padding-bottom: 63px;
     line-height: 1.8;
+    font-size: clamp(14px, 2vw, 25px);
 }
 
 .works_slider {
@@ -233,7 +236,7 @@
 
     .works_text dt {
         float: none;
-        font-size: 26px;
+        /* font-size: 26px; */
         line-height: 2;
         padding-top: 43px;
         padding-bottom: 17px;
@@ -242,7 +245,7 @@
     .works_text dd {
         padding-left: 0;
         padding-bottom: 0;
-        font-size: 20px;
+        /* font-size: 20px; */
         line-height: 2;
     }
 
@@ -300,7 +303,7 @@
 
     .works_text dt {
         float: none;
-        font-size: 20px;
+        /* font-size: 20px; */
         line-height: 2;
         padding-top: 43px;
         padding-bottom: 17px;
@@ -309,7 +312,7 @@
     .works_text dd {
         padding-left: 0;
         padding-bottom: 0;
-        font-size: 14px;
+        /* font-size: 14px; */
         line-height: 2;
     }
 

@@ -82,13 +82,19 @@
     padding: 100px 0 197px 0;
     width: 100%;
     padding-left: 3%;
-    position: relative;
+    /* position: relative; */
     box-sizing: border-box;
 }
 
+.about_shapes {
+    position: relative;
+}
+
 .square {
-    width: 50vw;
-    height: 50vw;
+    /* width: 50vw; */
+    /* height: 50vw; */
+    width: min(50vw, 1000px);
+    height: min(50vw, 1000px);
     border-radius: 50px;
     background-color: var(--accent-color);
     transition: 5s;
@@ -106,13 +112,17 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 60%;
+    /* right: 60%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .about_heading h2 {
     font-weight: 500;
     font-style: normal;
-    font-size: 7.3vw;
+    /* font-size: 7.3vw; */
+    font-size: clamp(38px, 7.3vw, 100px);
     font-family: "scotch-display", sans-serif;
     color: #ffffff;
 }
@@ -121,7 +131,8 @@
     font-family: "shippori-mincho", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.7vw;
+    /* font-size: 1.7vw; */
+    font-size: clamp(15px, 1.7vw, 24px);
     color: #ffffff;
 }
 
@@ -364,14 +375,16 @@
     font-family: "scotch-display", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 11.7vw;
+    /* font-size: 11.7vw; */
+    font-size: clamp(50px, 11vw, 106px);
     white-space: nowrap; /* テキストを折り返さないように設定 */
     overflow-wrap: normal; /*テキストがボックスの境界を超える場合は折り返さないように設定 */
     padding-top: 148px;
 }
 
 .thanks_text p {
-    font-size: 3vw;
+    /* font-size: 3vw; */
+    font-size: clamp(15px, 3vw, 25px);
     line-height: 1.8;
     padding-top: 90px;
     padding-bottom: 90px;
@@ -418,24 +431,24 @@
         line-height: 2;
     }
 
-    .about_heading {
+    /* .about_heading {
         transform: translateY(-332%);
         right: 0;
         position: static;
-    }
+    } */
 
     .square {
         width: 82vw;
         height: 82vw;
     }
 
-    .about_heading h2 {
+    /* .about_heading h2 {
         font-size: 10vw;
-    }
+    } */
 
-    .about_heading h3 {
+    /* .about_heading h3 {
         font-size: 4vw;
-    }
+    } */
 
     .works {
         padding-top: 100px;
