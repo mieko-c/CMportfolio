@@ -10,62 +10,62 @@
 //---
 
 // scotch display,しっぽり明朝必要ウェイトのみ抜粋、webフォントが読み込まれるまで非表示にしてカクツキを防止---
-(function(d) {
-  var config = {
-      kitId: 'iim6jay',  // TypekitのkitIdを設定
-      scriptTimeout: 3000,  // スクリプトのタイムアウトを設定
-      async: true  // 非同期でスクリプトを読み込む
-  },
-  h = d.documentElement,  // HTML要素を取得
-  t = setTimeout(function() {
+// (function(d) {
+  // var config = {
+      //kitId: 'iim6jay',  // TypekitのkitIdを設定
+      //scriptTimeout: 3000,  // スクリプトのタイムアウトを設定
+      //async: true  // 非同期でスクリプトを読み込む
+  // },
+  //h = d.documentElement,  // HTML要素を取得
+  // t = setTimeout(function() {
       // 指定時間内にフォントが読み込まれなかった場合、wf-loadingをwf-inactiveに置き換える
-      h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-  }, config.scriptTimeout), 
-  tk = d.createElement("script"),  // スクリプト要素を作成
-  f = false,  // フラグ
-  s = d.getElementsByTagName("script")[0],  // 最初のスクリプト要素を取得
-  a;
+      // h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+  // }, config.scriptTimeout), 
+  //tk = d.createElement("script"),  // スクリプト要素を作成
+  //f = false,  // フラグ
+  //s = d.getElementsByTagName("script")[0],  // 最初のスクリプト要素を取得
+  // a;
 
-  h.className += " wf-loading";  // フォントの読み込み中のクラスを追加
-  tk.src = 'https://use.typekit.net/' + config.kitId + '.js';  // Typekitのスクリプトを読み込む
-  tk.async = true;  // 非同期でスクリプトを実行
-  tk.onload = tk.onreadystatechange = function() {
-      a = this.readyState;
-      if (f || (a && a != "complete" && a != "loaded")) return;
-      f = true;
-      clearTimeout(t);  // タイムアウトをクリア
+  //h.className += " wf-loading";  // フォントの読み込み中のクラスを追加
+  //tk.src = 'https://use.typekit.net/' + config.kitId + '.js';  // Typekitのスクリプトを読み込む
+  //tk.async = true;  // 非同期でスクリプトを実行
+  // tk.onload = tk.onreadystatechange = function() {
+      // a = this.readyState;
+      // if (f || (a && a != "complete" && a != "loaded")) return;
+      // f = true;
+      // clearTimeout(t);  // タイムアウトをクリア
 
-      try {
-          Typekit.load({
-              active: function() {
+      // try {
+          // Typekit.load({
+              // active: function() {
                   // フォントが正常に読み込まれた場合、5秒後にクラスを変更
-                  setTimeout(function() {
-                      h.className = h.className.replace(/\bwf-loading\b/g, "wf-active");
-                  }, 5000);  // 5秒後にクラスを変更して表示
-              },
-              inactive: function() {
+                  // setTimeout(function() {
+                      // h.className = h.className.replace(/\bwf-loading\b/g, "wf-active");
+                  // }, 5000);  // 5秒後にクラスを変更して表示
+              // },
+              // inactive: function() {
                   // フォントが読み込まれなかった場合
-                  h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-              }
-          });
-      } catch (e) {
+                  // h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+              // }
+          // });
+      // } catch (e) {
           // エラーが発生した場合、wf-inactiveクラスを追加
-          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-      }
-  };
-  s.parentNode.insertBefore(tk, s);  // スクリプトを挿入
-})(document);
+          // h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+      // }
+  // };
+  // s.parentNode.insertBefore(tk, s);  // スクリプトを挿入
+// })(document);
 //---
 
 // scotch display,しっぽり明朝必要ウェイトのみ抜粋---
-  // (function(d) {
-  //   var config = {
-  //     kitId: 'iim6jay',
-  //     scriptTimeout: 3000,
-  //     async: true
-  //   },
-  //   h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  // })(document);
+  (function(d) {
+    var config = {
+      kitId: 'iim6jay',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
 //---
 
 // ページ遷移の文字のちらつきを防止

@@ -119,20 +119,20 @@ img {
 
 /* webフォント読み込みのカクツキを防止 */
 /* フォントが読み込まれるまで非表示にする */
-.wf-loading body {
+/* .wf-loading body {
     visibility: hidden;
-}
+} */
 
 /* フォントが読み込まれた後5秒後に表示される */
-.wf-active body {
-    visibility: hidden;
-    transition: visibility 0s 5s; /* 5秒後に表示 */
-}
+/* .wf-active body { */
+/* visibility: hidden; */
+/*transition: visibility 0s 5s; /* 5秒後に表示 */
+/* } */
 
 /* フォントが読み込まれなかった場合でも表示 */
-.wf-inactive body {
+/* .wf-inactive body {
     visibility: visible;
-}
+} */
 /* webフォント読み込みのカクツキを防止ここまで */
 
 /* viewボタンのカーソルマークを消す */
