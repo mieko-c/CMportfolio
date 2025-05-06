@@ -7,7 +7,7 @@
     font-weight: 600;
     font-style: normal;
     font-size: 12.5vw;
-    transform: scaleX(0.94);
+    transform: scaleX(0.94) translateX(-0.8%);
     position: absolute;
     top: 121px;
     line-height: 0.7;
@@ -457,7 +457,8 @@
 
 @media screen and (max-width: 768px) {
     .scrolldown {
-        top: 291px;
+        /* top: 291px; */
+        bottom: 0px;
     }
 
     .works ul {
@@ -475,12 +476,19 @@
     .works_title h2 {
         font-size: 20px;
     }
+
+    .family {
+        margin-bottom: 150px;
+    }
+    .wave {
+        margin-top: 250px;
+    }
 }
 
 @media screen and (max-width: 431px) {
-    .scrolldown {
+    /* .scrolldown {
         top: 226px;
-    }
+    } */
 
     .slick-next,
     .slick-prev {
@@ -509,41 +517,6 @@
     .square {
         transition: 8s;
     }
-}
-
-@media screen and (max-width: 376px) {
-    /* fv */
-    .pc_fv {
-        display: none;
-    }
-
-    .sp_fv {
-        display: block;
-        font-family: "scotch-display", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        font-size: 19vw;
-        transform: scaleX(0.83);
-        position: absolute;
-        top: 121px;
-        left: -5%;
-        line-height: 0.7;
-        white-space: nowrap; /* テキストを折り返さないように設定 */
-        overflow-wrap: normal; /* テキストがボックスの境界を超える場合は折り返さないように設定 */
-    }
-
-    .scrolldown {
-        top: 295px;
-    }
-
-    .about_text h2,
-    h3 {
-        font-size: 22px;
-    }
-
-    .about_text p {
-        font-size: 15px;
-    }
 
     .pc_only_photo {
         display: none;
@@ -560,6 +533,57 @@
     .family_heading span:last-child {
         animation: loop2 50s linear infinite;
     }
+}
+
+@media screen and (max-width: 376px) {
+    /* fv */
+    .pc_fv {
+        display: none;
+    }
+
+    .sp_fv {
+        display: block;
+        font-family: "scotch-display", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 19vw;
+        transform: scaleX(0.83) translateX(0.3%);
+        position: absolute;
+        top: 121px;
+        left: -5%;
+        line-height: 0.7;
+        white-space: nowrap; /* テキストを折り返さないように設定 */
+        overflow-wrap: normal; /* テキストがボックスの境界を超える場合は折り返さないように設定 */
+    }
+
+    /* .scrolldown {
+        top: 295px;
+    } */
+
+    .about_text h2,
+    h3 {
+        font-size: 22px;
+    }
+
+    .about_text p {
+        font-size: 15px;
+    }
+
+    /* .pc_only_photo {
+        display: none;
+    } */
+
+    /* .family_heading span {
+        font-size: 184vw;
+    }
+
+    .family_heading span:first-child {
+        animation: loop 50s -25s linear infinite;
+    }
+
+    .family_heading span:last-child {
+        animation: loop2 50s linear infinite;
+    } */
 
     /* works */
     .works_title h3 {

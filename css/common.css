@@ -719,13 +719,18 @@ canvas {
     } */
 }
 
+@media screen and (max-width: 431px) {
+    .wave {
+        margin-top: 200px;
+    }
+}
+
 @media screen and (max-width: 376px) {
     .sp_nav ul li {
         font-size: 18px;
     }
 
     .footer ul {
-        /* font-size: 12px; */
         font-size: 14px;
     }
 }
