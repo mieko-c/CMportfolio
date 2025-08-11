@@ -174,7 +174,7 @@ img {
 }
 
 .loading_text h1 {
-    font-family: "scotch-display", sans-serif;
+    font-family: "scotch-display", "serif";
     font-weight: 300;
     font-style: normal;
     font-size: 3vw;
@@ -223,7 +223,7 @@ img {
 }
 
 .pagetop-logo {
-    font-family: "scotch-display", sans-serif;
+    font-family: "scotch-display", "serif";
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
@@ -242,7 +242,7 @@ img {
 }
 
 .pc_nav a {
-    font-family: "scotch-display", sans-serif;
+    font-family: "scotch-display", "serif";
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
@@ -276,7 +276,7 @@ canvas {
 
 .footer ul li {
     color: #ffffff;
-    font-family: "scotch-display", sans-serif;
+    font-family: "scotch-display", "serif";
     font-weight: 300;
     font-style: normal;
     border-right: solid 1px #ffffff;
@@ -292,7 +292,7 @@ canvas {
 
 .copyright {
     color: #ffffff;
-    font-family: "scotch-display", sans-serif;
+    font-family: "scotch-display", "serif";
     font-weight: 300;
     font-style: normal;
     font-size: 11px;
@@ -301,7 +301,7 @@ canvas {
 
 .footer_logo {
     color: #ffffff;
-    font-family: "scotch-display", sans-serif;
+    font-family: "scotch-display", "serif";
     font-weight: 600;
     font-style: normal;
     font-size: 7vw;
@@ -464,7 +464,7 @@ canvas {
 }
 
 .contact_text h1 {
-    font-family: "scotch-display", sans-serif;
+    font-family: "scotch-display", "serif";
     font-weight: 600;
     font-style: normal;
     /* font-size: 11.7vw; */
@@ -535,7 +535,7 @@ canvas {
     border-radius: 20px;
     width: 219px;
     height: 99px;
-    font-family: "scotch-display", sans-serif;
+    font-family: "scotch-display", "serif";
     font-weight: 600;
     font-style: normal;
     font-size: 30px;
@@ -651,7 +651,7 @@ canvas {
         padding: 20px;
         color: #26130e;
         font-size: 30px;
-        font-family: "scotch-display", sans-serif;
+        font-family: "scotch-display", "serif";
         font-weight: 300;
         font-style: normal;
     }

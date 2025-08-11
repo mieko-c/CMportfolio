@@ -57,6 +57,7 @@
 // })(document);
 //---
 
+// フォントの指定↓
 // scotch display,しっぽり明朝必要ウェイトのみ抜粋---
   (function(d) {
     var config = {

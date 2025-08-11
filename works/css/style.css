@@ -6,7 +6,7 @@
 }
 
 .works_heading h1 {
-    font-family: "scotch-display", sans-serif;
+    font-family: "scotch-display", "serif";
     font-weight: 600;
     font-style: normal;
     /* font-size: 11vw; */
@@ -172,7 +172,7 @@
     background-color: var(--accent-color);
     border-radius: 50%;
     color: #ffffff;
-    font-family: "scotch-display", sans-serif;
+    font-family: "scotch-display", "serif";
     font-weight: 300;
     font-style: normal;
     font-size: 21px;
@@ -198,7 +198,7 @@
     background-color: var(--accent-color);
     border-radius: 50%;
     color: #ffffff;
-    font-family: "scotch-display", sans-serif;
+    font-family: "scotch-display", "serif";
     font-weight: 300;
     font-style: normal;
     font-size: 21px;
