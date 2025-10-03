@@ -217,7 +217,7 @@ img {
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 38px 13% 0 13%;
+    padding: 25px 3% 25px 3%;
     z-index: 1;
     backdrop-filter: blur(5px);
 }
@@ -255,7 +255,7 @@ img {
 .wave {
     position: relative;
     height: 200px; /*何も表示されない場合は各波の親要素に高さを持たせましょう。*/
-    margin-top: 459px;
+    margin-top: 200px;
     margin-bottom: -1px;
 }
 

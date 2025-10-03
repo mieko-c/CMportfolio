@@ -1,62 +1,3 @@
-// scotch display,scotch text,しっぽり明朝---
-  // (function(d) {
-  //   var config = {
-  //     kitId: 'iim6jay',
-  //     scriptTimeout: 3000,
-  //     async: true
-  //   },
-  //   h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  // })(document);
-//---
-
-// scotch display,しっぽり明朝必要ウェイトのみ抜粋、webフォントが読み込まれるまで非表示にしてカクツキを防止---
-// (function(d) {
-  // var config = {
-      //kitId: 'iim6jay',  // TypekitのkitIdを設定
-      //scriptTimeout: 3000,  // スクリプトのタイムアウトを設定
-      //async: true  // 非同期でスクリプトを読み込む
-  // },
-  //h = d.documentElement,  // HTML要素を取得
-  // t = setTimeout(function() {
-      // 指定時間内にフォントが読み込まれなかった場合、wf-loadingをwf-inactiveに置き換える
-      // h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-  // }, config.scriptTimeout), 
-  //tk = d.createElement("script"),  // スクリプト要素を作成
-  //f = false,  // フラグ
-  //s = d.getElementsByTagName("script")[0],  // 最初のスクリプト要素を取得
-  // a;
-
-  //h.className += " wf-loading";  // フォントの読み込み中のクラスを追加
-  //tk.src = 'https://use.typekit.net/' + config.kitId + '.js';  // Typekitのスクリプトを読み込む
-  //tk.async = true;  // 非同期でスクリプトを実行
-  // tk.onload = tk.onreadystatechange = function() {
-      // a = this.readyState;
-      // if (f || (a && a != "complete" && a != "loaded")) return;
-      // f = true;
-      // clearTimeout(t);  // タイムアウトをクリア
-
-      // try {
-          // Typekit.load({
-              // active: function() {
-                  // フォントが正常に読み込まれた場合、5秒後にクラスを変更
-                  // setTimeout(function() {
-                      // h.className = h.className.replace(/\bwf-loading\b/g, "wf-active");
-                  // }, 5000);  // 5秒後にクラスを変更して表示
-              // },
-              // inactive: function() {
-                  // フォントが読み込まれなかった場合
-                  // h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-              // }
-          // });
-      // } catch (e) {
-          // エラーが発生した場合、wf-inactiveクラスを追加
-          // h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-      // }
-  // };
-  // s.parentNode.insertBefore(tk, s);  // スクリプトを挿入
-// })(document);
-//---
-
 // フォントの指定↓
 // scotch display,しっぽり明朝必要ウェイトのみ抜粋---
   (function(d) {
@@ -93,46 +34,6 @@ $('.sp_btn, .sp_nav Li').on('click', function () {
   $(".sp_nav").fadeToggle();
   $(".sp_btn").toggleClass("open");
 });
-//---
-
-//works viweボタン---
-$(function(){
-  $(document).on({
-    'mouseenter': function () {
-      $('body').addClass('no-cursor');
-      $('.viewbutton').addClass('is-active');
-      document.addEventListener('mousemove', function (e) {
-        $('.viewbutton').css('transform', 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)');
-      });
-    },
-  
-    'mouseleave': function () {
-      $('body').removeClass('no-cursor');
-      $('.viewbutton').removeClass('is-active');      
-    }
-  }, '.slick-slide');
-});
-//---
-
-//worksスライダー---
-$(function () {
-$('.works_slider').slick({
-      dots: false,//インジケーターを非表示
-      infinite: true,//無限再生
-      speed: 1500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 1000,
-      // レスポンシブ
-      responsive: [{
-      breakpoint: 768,
-      settings: {
-      slidesToShow: 1
-      }
-    }]
-  });
-})
 //---
 
 // メールアイコンがフッターにいる時とそれ以外で色が変わる---

@@ -1,5 +1,5 @@
 .fv {
-    min-height: 100svh;
+    min-height: 85svh;
 }
 
 .pc_fv {
@@ -79,7 +79,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 0 197px 0;
+    padding-top: 100px;
     width: 100%;
     padding-left: 3%;
     /* position: relative; */
@@ -137,34 +137,34 @@
 }
 
 .about_text {
-    padding: 0 6% 0 2%;
+    padding: 0 3%;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
         "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-    width: 45%;
     box-sizing: border-box;
 }
 
 .about_text h2 {
     font-size: 24px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     color: var(--accent-color);
 }
 
 .about_text h3 {
     font-size: 24px;
-    padding: 35px 0 40px 0;
+    padding: 35px 0 10px 0;
     color: var(--accent-color);
 }
 
 .about_text p {
     font-size: 16px;
     line-height: 1.8;
+    text-align: justify;
 }
 
 /* family */
 .family {
     position: relative;
-    margin-bottom: 358px;
+    margin-bottom: 100px;
     overflow: hidden;
 }
 
@@ -183,7 +183,7 @@
     font-weight: 600;
     font-style: normal;
     font-size: 46vw;
-    line-height: 0.75;
+    line-height: 0.74;
 }
 
 .family_heading span:first-child {
@@ -221,7 +221,7 @@
 }
 
 .works {
-    padding-top: 100px;
+    padding: 100px 0 100px 0;
     overflow-x: hidden;
 }
 
@@ -252,19 +252,27 @@
     writing-mode: vertical-lr; /* 縦方向に配置 */
 }
 
-.works ul {
+/* .works ul {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     margin-left: 2.4%;
+} */
+.works ul {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 3%;
 }
 
 .works ul li {
     margin-right: 34px;
     width: 100%;
     overflow: hidden;
-    border-radius: 9.7%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #b2b2b2;
 }
 
 .works img {
@@ -354,6 +362,36 @@
     cursor: none;
 }
 
+.button-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    margin: 0 auto;
+    padding: 23px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 25%), 0 2px 3px -2px rgb(0 0 0 / 15%);
+    background-color: var(--accent-color);
+    margin-top: 80px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.button-3::after {
+    transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    content: "";
+}
+
+.button-3:hover {
+    background-color: var(--accent-color);
+}
+
 .thanks_footer p {
     color: #ffffff;
     font-family: "scotch-display", "serif";
@@ -402,9 +440,16 @@
     .scrolldown {
         top: 407px;
     }
+    .works ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 1100px) {
+    .fv {
+        min-height: 60svh;
+    }
+
     .scrolldown {
         top: 353px;
     }
@@ -413,7 +458,8 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 100px 0 150px 0;
+        padding-top: 100px;
+        padding-left: 0;
     }
 
     .about_text {
@@ -453,16 +499,15 @@
     .works {
         padding-top: 100px;
     }
+    .works ul {
+        padding: 0 6.5%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .scrolldown {
         /* top: 291px; */
         bottom: 0px;
-    }
-
-    .works ul {
-        margin-left: 4.3%;
     }
 
     .slick-prev {
@@ -477,11 +522,15 @@
         font-size: 20px;
     }
 
+    .works ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .family {
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     }
     .wave {
-        margin-top: 250px;
+        margin-top: 200px;
     }
 }
 
@@ -504,10 +553,6 @@
 
     .slick-prev:before {
         left: 59%;
-    }
-
-    .works ul {
-        margin-left: 7.3%;
     }
 
     .slick-prev {
@@ -556,10 +601,6 @@
         overflow-wrap: normal; /* テキストがボックスの境界を超える場合は折り返さないように設定 */
     }
 
-    /* .scrolldown {
-        top: 295px;
-    } */
-
     .about_text h2,
     h3 {
         font-size: 22px;
@@ -569,22 +610,6 @@
         font-size: 15px;
     }
 
-    /* .pc_only_photo {
-        display: none;
-    } */
-
-    /* .family_heading span {
-        font-size: 184vw;
-    }
-
-    .family_heading span:first-child {
-        animation: loop 50s -25s linear infinite;
-    }
-
-    .family_heading span:last-child {
-        animation: loop2 50s linear infinite;
-    } */
-
     /* works */
     .works_title h3 {
         font-size: 38px;
@@ -592,5 +617,11 @@
 
     .works_title h2 {
         font-size: 15px;
+    }
+
+    .button-3 {
+        width: 288px;
+        padding: 14px 0;
+        font-size: 16px;
     }
 }

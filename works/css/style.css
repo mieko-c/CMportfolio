@@ -34,6 +34,10 @@
     padding: 0 10% 0 10%;
 }
 
+.works_img_modal a {
+    padding-right: 10px;
+}
+
 /* モーダルCSS */
 .works4_modal {
     display: none;
@@ -76,15 +80,15 @@
     padding-bottom: 63px;
     line-height: 1.8;
     font-size: clamp(14px, 2vw, 25px);
+    text-align: justify;
 }
 
 .works_slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
     margin: 0 auto;
-    padding-left: 2.4%;
-    overflow-x: hidden;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 3%;
 }
 
 .works_slider ul {
@@ -92,10 +96,10 @@
 }
 
 .works_slider li {
-    margin-right: 34px;
     width: 100%;
     overflow: hidden;
-    border-radius: 9.7%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #b2b2b2;
 }
 
 .works_slider img {
@@ -186,6 +190,36 @@
     cursor: none;
 }
 
+.button-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    margin: 0 auto;
+    padding: 23px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 25%), 0 2px 3px -2px rgb(0 0 0 / 15%);
+    background-color: var(--accent-color);
+    margin-top: 80px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.button-3::after {
+    transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    content: "";
+}
+
+.button-3:hover {
+    background-color: var(--accent-color);
+}
+
 /* 制作実績詳細ページ専用の追従VIEWボタン */
 .modal_viewButton {
     position: fixed;
@@ -219,6 +253,18 @@
 @media screen and (max-width: 1920px) {
     .works_text dl {
         padding: 218px 20% 259px 20%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .works_slider {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .works_slider {
+        padding: 0 6.5%;
     }
 }
 
@@ -256,6 +302,10 @@
 
     .works ul {
         margin-left: 4.3%;
+    }
+
+    .works_slider {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
