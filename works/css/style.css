@@ -113,7 +113,7 @@
 }
 
 /* works右矢印調整 */
-.slick-next {
+/* .slick-next {
     width: 12rem;
     height: 12rem;
     background-color: black;
@@ -133,10 +133,10 @@
     transform: rotate(45deg);
     position: relative;
     left: 10%;
-}
+} */
 
 /* works左矢印調整 */
-.slick-prev {
+/* .slick-prev {
     z-index: 1;
     width: 12rem;
     height: 12rem;
@@ -162,7 +162,7 @@
 .slick-next:hover,
 .slick-prev:hover {
     background: black;
-}
+} */
 
 /* スライダーのviewボタン */
 .viewbutton {
