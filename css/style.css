@@ -182,7 +182,7 @@
     font-family: "scotch-display", "serif";
     font-weight: 600;
     font-style: normal;
-    font-size: 46vw;
+    font-size: 47vw;
     line-height: 0.74;
 }
 
@@ -509,7 +509,7 @@
     }
 
     .family_heading span {
-        font-size: 184vw;
+        font-size: 181vw;
     }
 
     .family_heading span:first-child {
