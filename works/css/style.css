@@ -112,58 +112,6 @@
     border-radius: 9.7%;
 }
 
-/* works右矢印調整 */
-/* .slick-next {
-    width: 12rem;
-    height: 12rem;
-    background-color: black;
-    border-radius: 50%;
-    opacity: 0.5;
-    transform: translate(50%, -50%);
-    right: 0px;
-}
-
-.slick-next:before {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    transform: rotate(45deg);
-    position: relative;
-    left: 10%;
-} */
-
-/* works左矢印調整 */
-/* .slick-prev {
-    z-index: 1;
-    width: 12rem;
-    height: 12rem;
-    background-color: black;
-    border-radius: 50%;
-    opacity: 0.5;
-    transform: translate(-50%, -50%);
-    left: -0.4%;
-}
-
-.slick-prev:before {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
-    transform: rotate(-45deg);
-    position: relative;
-    left: 68%;
-}
-
-.slick-next:hover,
-.slick-prev:hover {
-    background: black;
-} */
-
 /* スライダーのviewボタン */
 .viewbutton {
     position: fixed;
