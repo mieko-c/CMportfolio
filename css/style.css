@@ -391,10 +391,6 @@
         min-height: 60svh;
     }
 
-    .scrolldown {
-        top: 353px;
-    }
-
     .about {
         display: flex;
         justify-content: center;
@@ -418,24 +414,10 @@
         line-height: 2;
     }
 
-    /* .about_heading {
-        transform: translateY(-332%);
-        right: 0;
-        position: static;
-    } */
-
     .square {
         width: 82vw;
         height: 82vw;
     }
-
-    /* .about_heading h2 {
-        font-size: 10vw;
-    } */
-
-    /* .about_heading h3 {
-        font-size: 4vw;
-    } */
 
     .works {
         padding-top: 100px;
@@ -447,7 +429,7 @@
 
 @media screen and (max-width: 768px) {
     .scrolldown {
-        /* top: 291px; */
+        top: 291px;
         bottom: 0px;
     }
 

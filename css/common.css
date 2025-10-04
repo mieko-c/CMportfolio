@@ -117,24 +117,6 @@ img {
 }
 /* リセットcssここまで */
 
-/* webフォント読み込みのカクツキを防止 */
-/* フォントが読み込まれるまで非表示にする */
-/* .wf-loading body {
-    visibility: hidden;
-} */
-
-/* フォントが読み込まれた後5秒後に表示される */
-/* .wf-active body { */
-/* visibility: hidden; */
-/*transition: visibility 0s 5s; /* 5秒後に表示 */
-/* } */
-
-/* フォントが読み込まれなかった場合でも表示 */
-/* .wf-inactive body {
-    visibility: visible;
-} */
-/* webフォント読み込みのカクツキを防止ここまで */
-
 /* viewボタンのカーソルマークを消す */
 .no-cursor,
 .no-cursor a {
@@ -155,7 +137,7 @@ img {
 }
 
 .loading_logo {
-    width: 50%;
+    width: 40%;
     animation: rotate 10s linear infinite;
 }
 @keyframes rotate {
@@ -177,7 +159,7 @@ img {
     font-family: "scotch-display", "serif";
     font-weight: 300;
     font-style: normal;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 #countup {
