@@ -20,7 +20,7 @@
     /*描画位置※位置は適宜調整してください*/
     position: absolute;
     left: 11%;
-    top: 524px;
+    top: 500px;
     /*全体の高さ*/
     height: 321px;
 }
@@ -377,15 +377,21 @@
     display: block;
 }
 
-@media screen and (max-width: 3000px) {
+@media screen and (max-width: 1700px) {
     .scrolldown {
-        top: 700px;
+        top: 450px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .scrolldown {
+        top: 410px;
     }
 }
 
 @media screen and (max-width: 1366px) {
     .scrolldown {
-        top: 407px;
+        top: 377px;
     }
 
     .works ul {
@@ -394,10 +400,6 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .fv {
-        min-height: 60svh;
-    }
-
     .about {
         display: flex;
         justify-content: center;
@@ -465,9 +467,12 @@
 }
 
 @media screen and (max-width: 431px) {
-    /* .scrolldown {
-        top: 226px;
-    } */
+    .fv {
+        min-height: 60svh;
+    }
+    .scrolldown {
+        top: 256px;
+    }
 
     .slick-next,
     .slick-prev {
