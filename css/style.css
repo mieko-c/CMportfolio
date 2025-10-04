@@ -473,9 +473,6 @@
 }
 
 @media screen and (max-width: 431px) {
-    .fv {
-        min-height: 60svh;
-    }
     .scrolldown {
         top: 256px;
     }
