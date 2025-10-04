@@ -378,19 +378,20 @@
 }
 
 @media screen and (max-width: 1366px) {
+    .fv {
+        min-height: 60svh;
+    }
+
     .scrolldown {
         top: 407px;
     }
+
     .works ul {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .fv {
-        min-height: 60svh;
-    }
-
     .about {
         display: flex;
         justify-content: center;
