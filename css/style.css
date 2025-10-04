@@ -20,7 +20,7 @@
     /*描画位置※位置は適宜調整してください*/
     position: absolute;
     left: 11%;
-    top: 500px;
+    top: 680px;
     /*全体の高さ*/
     height: 321px;
 }
@@ -375,6 +375,12 @@
 }
 .scrolldown p {
     display: block;
+}
+
+@media screen and (max-width: 2000px) {
+    .scrolldown {
+        top: 500px;
+    }
 }
 
 @media screen and (max-width: 1700px) {
